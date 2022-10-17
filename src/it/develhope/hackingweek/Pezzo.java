@@ -4,27 +4,27 @@ import java.util.Objects;
 
 public class Pezzo {
 
-    private String tipo;
-    private String colore;
+    private TipoPezzo tipo;
+    private ColorePezzo colore;
 
-    public Pezzo(String tipo, String colore) {
+    public Pezzo(TipoPezzo tipo, ColorePezzo colore) {
         this.tipo = tipo;
         this.colore = colore;
     }
 
-    public String getTipo() {
+    public TipoPezzo getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(TipoPezzo tipo) {
         this.tipo = tipo;
     }
 
-    public String getColore() {
+    public ColorePezzo getColore() {
         return colore;
     }
 
-    public void setColore(String colore) {
+    public void setColore(ColorePezzo colore) {
         this.colore = colore;
     }
 
