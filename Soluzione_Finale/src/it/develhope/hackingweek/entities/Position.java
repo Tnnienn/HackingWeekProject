@@ -1,9 +1,8 @@
 package it.develhope.hackingweek.entities;
-
 import java.util.Objects;
 
 /**
- * Questa classe rappresenta una poszione della scacchierao
+ * Questa classe rappresenta una poszione
  */
 
 public class Position implements Comparable<Position>{

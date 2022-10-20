@@ -1,5 +1,4 @@
 package it.develhope.hackingweek.entities;
-
 import java.util.Objects;
 
 /**

@@ -1,7 +1,5 @@
 package it.develhope.hackingweek.interfaces;
-
 import it.develhope.hackingweek.entities.*;
-
 import java.util.List;
 
 /**
