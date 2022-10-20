@@ -19,7 +19,7 @@ public class Test {
         scacchiera.put(re,new Position(3,1));
         scacchiera.put(regina,new Position(4,1));
         scacchiera.put(pedoneUno,new Position(5,1));
-        scacchiera.put(PedoneDue,new Position(3,1));
+        scacchiera.put(PedoneDue,new Position(7,1));
 
         System.out.println(scacchiera.isInBoard(new Position(1,4)));
         System.out.println(scacchiera.isInBoard(new Position(1,1)));

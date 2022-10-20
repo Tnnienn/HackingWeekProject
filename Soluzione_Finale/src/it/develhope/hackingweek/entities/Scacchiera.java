@@ -1,9 +1,7 @@
 package it.develhope.hackingweek.entities;
 import it.develhope.hackingweek.interfaces.TavolaDaGioco;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 /**
  * Questa classe rappresenta una scacchiera
@@ -76,12 +74,12 @@ public class Scacchiera implements TavolaDaGioco {
 
     /**
      * Metodo che deve controllare se la posizione è valida e che non sia già occupata da un altro pezzo.
-     * inserisce il pezzo per la prima volta sulla scacchiera
+     * Inserisce il pezzo per la prima volta sulla scacchiera
      * @param pz indica il primo oggetto preso in input
      * @param ps indica il secondo oggetto preso in input
      */
     public void put(Pezzo pz, Position ps) {
-        if(isInBoard(ps) && !assegnaPosizioni.containsValue(pz)) {
+        if(isInBoard(ps) && !assegnaPosizioni.containsKey(ps)) {
             assegnaPosizioni.put(ps,pz);
         } else {
             System.out.println("***Errore posizione non valida***");
