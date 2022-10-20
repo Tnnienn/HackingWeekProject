@@ -1,5 +1,8 @@
-package it.develhope.hackingweek;
+package it.develhope.hackingweek.entities;
 
+/**
+ * Questo enum rappresenta i tipi di pezzo possibili
+ */
 public enum TipoPezzo {
     DISCO,
     RE,
@@ -8,5 +11,4 @@ public enum TipoPezzo {
     ALFIERE,
     CAVALLO,
     PEDONE
-
 }

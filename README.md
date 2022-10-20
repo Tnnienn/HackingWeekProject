@@ -16,12 +16,12 @@ true se la posizione è una posizione della scacchiera.
 4) Creare una classe Mossa che rappresenta una mossa all’interno della scacchiera.
 Questa classe avrà un costruttore con il pezzo da muovere, x e y, dove x e y sono le
 coordinate della nuova posizione, un metodo hashcode e un metodo equals che ritorna true se le due mosse sono dello stesso pezzo e con stessa posizione finale.
-5) Creare una classe it.develhope.hackingweek.Scacchiera che implementa l’interfaccia TavolaDaGioco. Essa
+5) Creare una classe it.develhope.hackingweek.entities.Scacchiera che implementa l’interfaccia TavolaDaGioco. Essa
 deve implementare i metodi dell’interfaccia TavolaDaGioco e avrà il seguente costruttore:
 - prende in input w,h che rappresentano la larghezza e l’altezza della scacchiera. La
 scacchiera ha inoltre come attributo una mappa che associa ogni posizione al pezzo
 posizionato su di essa. Quando la scacchiera viene creata, avrà tutte posizioni vuote.
-6) Implementare inoltre dentro it.develhope.hackingweek.Scacchiera i seguenti metodi:
+6) Implementare inoltre dentro it.develhope.hackingweek.entities.Scacchiera i seguenti metodi:
 - put(Pezzo pz, Posizione ps) prende in input un pezzo e una posizione e mette quel
 pezzo per la prima volta sulla scacchiera in quella posizione. Il metodo deve controllare se la posizione sia valida e che non sia già occupata da un altro pezzo.
 - isValid(Mossa m) che prende in input una mossa e ritorna true se essa è valida in

@@ -1,6 +1,6 @@
 package it.develhope.hackingweek;
 
-import it.develhope.hackingweek.*;
+import it.develhope.hackingweek.entities.*;
 
 public class Test {
 
@@ -8,7 +8,7 @@ public class Test {
         Scacchiera scacchiera = new Scacchiera(8,8);
 
         Pezzo torre = new Pezzo(TipoPezzo.TORRE, ColorePezzo.NERO);
-        Pezzo cavallo = new Pezzo(TipoPezzo.CAVALLO,ColorePezzo.NERO);
+        Pezzo cavallo = new Pezzo(TipoPezzo.CAVALLO, ColorePezzo.NERO);
         Pezzo re = new Pezzo(TipoPezzo.RE,ColorePezzo.NERO);
         Pezzo regina = new Pezzo(TipoPezzo.REGINA,ColorePezzo.NERO);
         Pezzo pedoneUno = new Pezzo(TipoPezzo.PEDONE,ColorePezzo.NERO);

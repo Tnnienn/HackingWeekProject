@@ -1,9 +1,6 @@
-package it.develhope.hackingweek;
+package it.develhope.hackingweek.entities;
 
-import it.develhope.hackingweek.Mossa;
-import it.develhope.hackingweek.Pezzo;
-import it.develhope.hackingweek.Position;
-import it.develhope.hackingweek.TavolaDaGioco;
+import it.develhope.hackingweek.interfaces.TavolaDaGioco;
 
 import java.util.ArrayList;
 import java.util.HashMap;
