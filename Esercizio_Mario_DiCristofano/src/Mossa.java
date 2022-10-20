@@ -1,13 +1,29 @@
+package it.develhope.hackingweek;
+
 import java.util.Objects;
 
 public class Mossa {
 
-    protected Pezzo a;
-    protected Position b;
+    private Pezzo pezzoDaMuovere;
+    private  Position finalPosition;
+    private  Position initialPosition;
 
-    public Mossa(Pezzo a,Position b){
-        this.a = a;
-        this.b = b;
+    public Mossa(Pezzo pezzoDaMuovere, Position initialPosition, Position finalPosition) {
+        this.pezzoDaMuovere = pezzoDaMuovere;
+        this.initialPosition = initialPosition;
+        this.finalPosition = finalPosition;
+    }
+
+    public Pezzo getPezzoDaMuovere() {
+        return pezzoDaMuovere;
+    }
+
+    public Position getFinalPosition() {
+        return finalPosition;
+    }
+
+    public Position getInitialPosition() {
+        return initialPosition;
     }
 
     @Override
@@ -15,11 +31,11 @@ public class Mossa {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Mossa mossa = (Mossa) o;
-        return Objects.equals(a, mossa.a) && Objects.equals(b, mossa.b);
+        return Objects.equals(pezzoDaMuovere, mossa.pezzoDaMuovere) && Objects.equals(finalPosition, mossa.finalPosition) && Objects.equals(initialPosition, mossa.initialPosition);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(a, b);
+        return Objects.hash(pezzoDaMuovere, finalPosition, initialPosition);
     }
 }

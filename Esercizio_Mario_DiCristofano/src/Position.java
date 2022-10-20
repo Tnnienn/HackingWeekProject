@@ -1,12 +1,30 @@
+package it.develhope.hackingweek;
+
 import java.util.Objects;
 
-public class Position implements Comparable <Position>{
+public class Position implements Comparable<Position>{
 
-    protected int x;
-    protected int y;
+    private int x;
+    private int y;
 
-    public Position(int x,int y){
+    public Position(int x, int y) {
         this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
         this.y = y;
     }
 
@@ -24,20 +42,19 @@ public class Position implements Comparable <Position>{
     }
 
     @Override
-    public int compareTo(Position b) {
-
-        int result = this.x - b.x;
-        if(result == 0) {
-            return this.y - b.y;
+    public int compareTo(Position p) {
+        int xDiff = this.x - p.x;
+        if(xDiff != 0) {
+            return xDiff;
         }
-        return result;
+        return this.y - p.y;
     }
 
     @Override
     public String toString() {
-        return "Position{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("X: ").append(this.x).append(" : ");
+        sb.append("Y: ").append(this.y).append("\n");
+        return sb.toString();
     }
 }

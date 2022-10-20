@@ -1,6 +1,6 @@
+package it.develhope.hackingweek;
 
 public enum TipoPezzo {
-
     DISCO,
     RE,
     REGINA,
@@ -8,4 +8,5 @@ public enum TipoPezzo {
     ALFIERE,
     CAVALLO,
     PEDONE
+
 }
