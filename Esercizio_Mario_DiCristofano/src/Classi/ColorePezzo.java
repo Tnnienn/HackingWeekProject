@@ -1,3 +1,5 @@
+package Classi;
+
 /**
  * Questo enum rappresenta i possibili colori del pezzo
  */

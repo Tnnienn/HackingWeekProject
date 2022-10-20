@@ -1,3 +1,5 @@
+package Classi;
+
 /**
  * Questo enum rappresenta i tipi di pezzo possibili
  */

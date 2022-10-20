@@ -1,3 +1,5 @@
+package Classi;
+
 import java.util.Objects;
 
 /**
@@ -68,9 +70,9 @@ public class Position implements Comparable<Position>{
      */
     @Override
     public int compareTo(Position p) {
-        int result = this.x - b.x;
+        int result = this.x - p.x;
         if(result == 0) {
-            return this.y - b.y;
+            return this.y - p.y;
         }
         return result;
     }
