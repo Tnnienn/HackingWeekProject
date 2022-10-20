@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Pezzo {
 
-    private TipoPezzo tipo;
-    private ColorePezzo colore;
+    private final TipoPezzo tipo;
+    private final ColorePezzo colore;
 
     public Pezzo(TipoPezzo tipo, ColorePezzo colore) {
         this.tipo = tipo;
@@ -16,16 +16,8 @@ public class Pezzo {
         return tipo;
     }
 
-    public void setTipo(TipoPezzo tipo) {
-        this.tipo = tipo;
-    }
-
     public ColorePezzo getColore() {
         return colore;
-    }
-
-    public void setColore(ColorePezzo colore) {
-        this.colore = colore;
     }
 
     @Override

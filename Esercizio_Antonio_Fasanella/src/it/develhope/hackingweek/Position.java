@@ -49,4 +49,12 @@ public class Position implements Comparable<Position>{
         }
         return this.y - p.y;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("X: ").append(this.x).append(" : ");
+        sb.append("Y: ").append(this.y).append("\n");
+        return sb.toString();
+    }
 }
